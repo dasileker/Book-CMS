@@ -17,7 +17,8 @@ As the name describe this project is a store for book where you can add books th
 
 ## Live Demo
 
-[Live Demo Link](https://maktabatty.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://maktabatty.herokuapp.com/)
+
 
 ## Getting Started
 
