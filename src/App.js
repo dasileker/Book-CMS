@@ -3,11 +3,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Book-store-cms</h1>
-      </header>
-    </div>
+    <>
+      <div className="header">
+        <h1>Book-store-cms</h1>
+      </div>
+    </>
+      
   );
 }
 
