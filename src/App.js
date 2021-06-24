@@ -8,7 +8,7 @@ function App() {
         <h1>Book-store-cms</h1>
       </div>
     </>
-      
+
   );
 }
 
