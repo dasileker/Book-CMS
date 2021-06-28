@@ -3,12 +3,20 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-const BookList = ({ books }) => {
+const BookList = ({ books }) => (
   <table>
     <tr>
       <th>BookID</th>
       <th>Title</th>
       <th>Category</th>
     </tr>
+    {
+
+    }
   </table>
+);
+
+
+BookList.prototypes = {
+  books: PropTypes.arrayOf(PropTypes.object),
 }
