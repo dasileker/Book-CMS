@@ -4,7 +4,7 @@ const bookCategories = [
   'Action',
   'Biography',
   'History',
-  'Horor',
+  'Horror',
   'Kids',
   'Learning',
   'Sci-Fi',
@@ -12,12 +12,11 @@ const bookCategories = [
 
 const BooksForm = () => (
   <form>
-    <div className='enter-group'>
-      <input type='text' />
+    <div className="input-group">
+      <input type="text" />
     </div>
-
-    <div className='enter-group'>
-      <select name='book-categories' id='categories'>
+    <div className="input-group">
+      <select name="book-categories" id="categories">
         {
           bookCategories.map(category => (
             <option key={`key-${category}`} value={category}>
@@ -27,8 +26,7 @@ const BooksForm = () => (
         }
       </select>
     </div>
-    <button type='button'>Submit</button>
-
+    <button type="button">Submit</button>
   </form>
 );
 
