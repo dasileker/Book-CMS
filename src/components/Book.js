@@ -9,7 +9,7 @@ const Book = ({ bookID, title, category }) => (
   </tr>
 );
 
-Book.prototypes = {
+Book.propTypes = {
   bookID: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
