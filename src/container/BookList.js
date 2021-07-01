@@ -21,6 +21,7 @@ const BooksList = ({ books, removeBook }) => (
             bookID={book.bookID}
             title={book.title}
             category={book.category}
+            handleRemoveBook={removeBook}
           />
         ))
       }
@@ -37,8 +38,10 @@ BooksList.defaultProps = {
   books: [],
 };
 
+const mapDispatchToProps = { removeBook };
+
 const mapStateToProps = ({ books }) => ({
   books,
 });
 
-export default connect(mapStateToProps)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
