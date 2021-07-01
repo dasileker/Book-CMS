@@ -5,7 +5,6 @@ const Book = ({
   bookID,
   title,
   category,
-  handleRemoveBook,
 }) => (
   <tr>
     <td>{bookID}</td>
