@@ -10,7 +10,3 @@ export const removeBook = book => ({
   book,
 });
 
-export const changeFiler = value => ({
-  type: CHANGE_FILTER,
-  value,
-});
