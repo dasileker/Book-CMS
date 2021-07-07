@@ -1,9 +1,9 @@
-export default bookCategories = [
+export const bookCategories = [
   'Action',
   'Biography',
   'History',
   'Horror',
-  'kids',
+  'Kids',
   'Learning',
   'Sci-Fi',
 ];
@@ -12,5 +12,6 @@ export const getFilteredBooks = (books, filter) => {
   if (filter === 'All') {
     return books;
   }
+
   return books.filter(book => book.category === filter);
 };

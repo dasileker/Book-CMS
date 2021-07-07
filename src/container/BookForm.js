@@ -2,18 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions/index';
+import { bookCategories } from '../helper/index';
 
-const bookCategories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
-
-const BooksForm = ({ createBook }) => {
+const BookForm = ({ createBook }) => {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
 
@@ -51,8 +42,6 @@ const BooksForm = ({ createBook }) => {
       </div>
       <div className="input-group">
         <select
-          name="book-categories"
-          id="categories"
           value={category}
           onChange={handleCategoryChange}
         >
@@ -78,10 +67,10 @@ const BooksForm = ({ createBook }) => {
   );
 };
 
-BooksForm.propTypes = {
+BookForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
 
 const mapDispatchToProps = { createBook };
 
-export default connect(null, mapDispatchToProps)(BooksForm);
+export default connect(null, mapDispatchToProps)(BookForm);

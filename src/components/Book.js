@@ -31,7 +31,7 @@ const Book = ({
 );
 
 Book.propTypes = {
-  bookID: PropTypes.string.isRequired,
+  bookID: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   handleRemoveBook: PropTypes.func.isRequired,

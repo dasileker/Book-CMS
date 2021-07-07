@@ -1,4 +1,4 @@
-import { CHANGE_FILTER } from "../action-type";
+import { CHANGE_FILTER } from '../action-type/index';
 
 export default (state = 'All', action) => {
   switch (action.type) {
