@@ -14,6 +14,7 @@ const Book = ({
         <div className="category">{category}</div>
         <div className="title">{title}</div>
         <div className="author">author X</div>
+        <div className="target-category">{ category }</div>
       </div>
       <div className="actions">
         <button
