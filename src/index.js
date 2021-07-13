@@ -5,12 +5,13 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import store from './reducers/index';
 import { createBook } from './actions/index';
+import './index.css';
 
 const intialState = [
   {
     bookID: Math.floor(Math.random() * 1000),
     title: 'Lion Of Tanzania',
-    category: 'Fantazy',
+    category: 'Kids',
   },
   {
     bookID: Math.floor(Math.random() * 1000),
